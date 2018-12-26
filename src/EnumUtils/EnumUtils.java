@@ -6,6 +6,7 @@
 package EnumUtils;
 
 import Enums.RootEnum;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**

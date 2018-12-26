@@ -5,6 +5,14 @@
  */
 package Test;
 
+import EnumUtils.EnumUtils;
+import Enums.examples.Days.DaysIntegerUsage;
+import Enums.examples.Days.DaysListUsage;
+import Enums.examples.Days.DaysStringUsage;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author Satish
@@ -15,7 +23,23 @@ public class Test {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        boolean result;
+        
+        result = EnumUtils.checkEnumByName(DaysStringUsage.class, "MONDAY");
+        System.out.println("First result : "+result);
+        
+        result = EnumUtils.checkEnumByName(DaysStringUsage.values(), "MONDAY");
+        System.out.println("First result : "+result);
+        
+        result = EnumUtils.checkEnumByValue(DaysStringUsage.class, "THU");
+        System.out.println("First result : "+result);
+        
+        result = EnumUtils.checkEnumByValue(DaysIntegerUsage.class, 4);
+        System.out.println("First result : "+result);
+        
+        List list = new ArrayList(Arrays.asList(1,"MON"));
+        result = EnumUtils.checkEnumByValue(DaysListUsage.class, list);
+        System.out.println("First result : "+result);
     }
     
 }
