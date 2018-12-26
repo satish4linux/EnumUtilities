@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## EnumUtilities
 
-You can use the [editor on GitHub](https://github.com/satish4linux/EnumUtilities/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a Utility API being developed by me which can be used to work around Java Enums.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Features
 
-### Markdown
+This API provides Utility classes to perform validation check on Enums i.e., whether the required constant is part of the given Enum or not.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Current Project Status
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/satish4linux/EnumUtilities/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Under Development
