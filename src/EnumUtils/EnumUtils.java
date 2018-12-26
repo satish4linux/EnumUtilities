@@ -13,6 +13,7 @@ import java.util.Objects;
  * @author Satish
  */
 public class EnumUtils {
+
     public static <T extends Enum<T>> boolean checkEnumByName(T[] t, String test) {
         for (T obj : t) {
             if (obj.name().equals(test)) {
