@@ -52,4 +52,14 @@ public class EnumUtils {
         }
         return false;
     }
+    
+    public static <T extends Enum<T> & RootEnum<E>,E> String getNameByEnumValue(Class<T> t,E value){
+        T[] enumData = t.getEnumConstants();
+        for(T data : enumData){
+            if(Objects.equals(data.getType(), value)){
+                return data.name();
+            }
+        }
+        return null;
+    }
 }
