@@ -11,7 +11,7 @@ import Enums.RootEnum;
  *
  * @author Satish
  */
-public enum DaysStringUsage implements RootEnum<String> {
+public enum DaysStringUsage implements RootEnum<String, String> {
     MONDAY("MON"),
     TUESDAY("TUE"),
     WEDNESDAY("WED"),
@@ -23,11 +23,16 @@ public enum DaysStringUsage implements RootEnum<String> {
     private final String type;
 
     @Override
-    public String getType() {
+    public String getKey() {
         return type;
     }
 
     private DaysStringUsage(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String getType() {
+        return type;
     }
 }

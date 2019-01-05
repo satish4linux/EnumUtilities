@@ -31,14 +31,13 @@ public class Test {
         result = EnumUtils.checkEnumByName(DaysStringUsage.values(), "MONDAY");
         System.out.println("First result : "+result);
         
-        result = EnumUtils.checkEnumByValue(DaysStringUsage.class, "THU");
+        result = EnumUtils.checkEnumByKey(DaysStringUsage.class, "THU");
         System.out.println("First result : "+result);
         
-        result = EnumUtils.checkEnumByValue(DaysIntegerUsage.class, 4);
+        result = EnumUtils.checkEnumByKey(DaysIntegerUsage.class, 4);
         System.out.println("First result : "+result);
         
-        List list = new ArrayList(Arrays.asList(1,"MON"));
-        result = EnumUtils.checkEnumByValue(DaysListUsage.class, list);
+        result = EnumUtils.checkEnumByKey(DaysListUsage.class, 8);
         System.out.println("First result : "+result);
     }
     

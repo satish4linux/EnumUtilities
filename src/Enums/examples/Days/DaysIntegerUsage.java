@@ -11,7 +11,7 @@ import Enums.RootEnum;
  *
  * @author Satish
  */
-public enum DaysIntegerUsage implements RootEnum<Integer> {
+public enum DaysIntegerUsage implements RootEnum<Integer, Integer> {
     MONDAY(1),
     TUESDAY(2),
     WEDNESDAY(3),
@@ -23,11 +23,16 @@ public enum DaysIntegerUsage implements RootEnum<Integer> {
     private final int type;
 
     @Override
-    public Integer getType() {
+    public Integer getKey() {
         return type;
     }
 
     private DaysIntegerUsage(int type) {
         this.type = type;
+    }
+
+    @Override
+    public Integer getType() {
+        return type;
     }
 }

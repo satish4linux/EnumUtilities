@@ -34,19 +34,19 @@ public class EnumUtils {
         return false;
     }
 
-    public static <T extends Enum<T> & RootEnum<E>, E> boolean checkEnumByValue(T[] t, E test) {
+    public static <T extends Enum<T> & RootEnum<K, E>,E, K> boolean checkEnumByKey(T[] t, K test) {
         for (T obj : t) {
-            if (Objects.equals(obj.getType(), test)) {
+            if (Objects.equals(obj.getKey(), test)) {
                 return true;
             }
         }
         return false;
     }
 
-    public static <T extends Enum<T> & RootEnum<E>, E> boolean checkEnumByValue(Class<T> t, E test) {
+    public static <T extends Enum<T> & RootEnum<K, E>, E, K> boolean checkEnumByKey(Class<T> t, K test) {
         T[] enumData = t.getEnumConstants();
         for (T data : enumData) {
-            if (Objects.equals(data.getType(), test)) {
+            if (Objects.equals(data.getKey(), test)) {
                 return true;
             }
         }

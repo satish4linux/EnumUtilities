@@ -8,8 +8,10 @@ package Enums;
 /**
  *
  * @author Satish
- * @param <T>   Data Type of value in Enum Constants
+ * @param <K>   Type Parameter of Key of Enum Constants
+ * @param <T>   Type Parameter of Value of Enum Constants
  */
-public interface RootEnum<T> {
-    public abstract T getType();
+public interface RootEnum<K, T> {
+    public K getKey(); 
+    public T getType();
 }

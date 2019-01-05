@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author Satish
  */
-public enum DaysListUsage implements RootEnum<List> {
+public enum DaysListUsage implements RootEnum<Integer,List> {
     MONDAY(new ArrayList(Arrays.asList(new Serializable[]{1, "MON"}))),
     TUESDAY(new ArrayList(Arrays.asList(new Serializable[]{2, "TUE"}))),
     WEDNESDAY(new ArrayList(Arrays.asList(new Serializable[]{3, "WED"}))),
@@ -27,11 +27,16 @@ public enum DaysListUsage implements RootEnum<List> {
     private final List type;
 
     @Override
-    public List getType() {
-        return type;
+    public Integer getKey() {
+        return (Integer) type.get(0); 
     }
 
     private DaysListUsage(List type) {
         this.type = type;
+    }
+
+    @Override
+    public List getType() {
+        return type;
     }
 }
