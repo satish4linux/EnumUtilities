@@ -6,7 +6,6 @@
 package EnumUtils;
 
 import Enums.RootEnum;
-import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -53,7 +52,7 @@ public class EnumUtils {
         return false;
     }
     
-    public static <T extends Enum<T> & RootEnum<E>,E> String getNameByEnumValue(Class<T> t,E value){
+    public static <T extends Enum<T> & RootEnum<K, E>,E,K> String getNameByEnumValue(Class<T> t,K value){
         T[] enumData = t.getEnumConstants();
         for(T data : enumData){
             if(Objects.equals(data.getType(), value)){
