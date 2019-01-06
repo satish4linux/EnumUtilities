@@ -9,9 +9,6 @@ import EnumUtils.EnumUtils;
 import Enums.examples.Days.DaysIntegerUsage;
 import Enums.examples.Days.DaysListUsage;
 import Enums.examples.Days.DaysStringUsage;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  *
